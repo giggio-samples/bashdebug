@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "bashdb",
+            "request": "launch",
+            "name": "Bash-Debug (select script from list of sh files)",
+            "cwd": "${workspaceFolder}",
+            "program": "${command:SelectScriptName}",
+            "showDebugOutput": true,
+            "trace": true,
+            "args": []
+        },
+        {
+            "type": "bashdb",
+            "request": "launch",
+            "name": "Bash-Debug (type in script name)",
+            "cwd": "${workspaceFolder}",
+            "program": "${command:AskForScriptName}",
+            "args": []
+        },
+        {
+            "type": "bashdb",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "name": "Bash-Debug (simplest configuration)",
+            "program": "${file}",
+            "args": []
+        }
+    ]
+}
